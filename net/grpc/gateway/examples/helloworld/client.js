@@ -19,7 +19,7 @@
 const {HelloRequest, HelloReply} = require('./helloworld_pb.js');
 const {GreeterClient} = require('./helloworld_grpc_web_pb.js');
 
-var url = 'http://' + window.location.hostname + ':8080';
+var url = 'https://grpc-hello.g.rochacon.me';
 var client = new GreeterClient(url, null, null);
 console.log("connecting to "+ url);
 
