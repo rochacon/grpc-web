@@ -32,7 +32,7 @@ setInterval(function() {
       output.innerText += (`unexpected error for sayHello: code = ${err.code} message = "${err.message}"`);
     } else {
       var now = new Date().toISOString();
-      output.innerText += (now +": "+ response.getMessage());
+      output.innerText += (`${now}: ${url}/helloworld.Greeter/SayHello = ${response.getMessage()}`);
     }
     output.innerText += "\n";
   });
